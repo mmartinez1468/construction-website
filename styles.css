@@ -613,7 +613,7 @@ form {
 }
 @media screen and (max-width: 768px) {
   #landing::before {
-    background-position: center center;
+    background-image: url(images/asphalt-about.jpg);
   }
 }
 
