@@ -171,6 +171,146 @@
     max-width: 1120px;
     margin-inline: 1.5rem;
   }
+  /********************** PRE LOADER **********************/
+  .loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    opacity: 1;
+    z-index: 100000000;
+  }
+  .loaderHidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 2s, visibility 1s; /* Apply transition here only */
+  }
+  .loader::after {
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid #dddddd;
+    border-top-color: #1178de;
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+
+  }
+  @keyframes loading {
+    from {
+      transform: rotate(0turn);
+    }
+    to {
+      transform: rotate(1turn);
+    }
+  }
+
+  
+  /********************** ANIMATIONS **********************/
+  /* Replays Animation When Back In ViewPort */
+  .animated {
+    opacity: 0;
+    transition: all 1s;
+  }
+  /* One Time Animation For The Landing Page  */
+  .fadeInLeftStay {
+    opacity: 1;
+    animation-name: fadeInLeftOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: forwards;
+    animation-duration: 2s;
+  }
+  @keyframes fadeInLeftOpacity {
+    0% {
+       opacity: 0;
+       transform: translateX(-100px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateX(0);
+    }
+  } 
+  /* One Time Animation For The Landing Page  */
+  .fadeInRightStay {
+    opacity: 1;
+    animation-name: fadeInRightOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: forwards;
+    animation-duration: 2s;
+  }
+  @keyframes fadeInRightOpacity {
+    0% {
+       opacity: 0;
+       transform: translateX(100px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateY(0);
+    }
+  } 
+  /* FadeInLeft Animation */
+  .fadeInLeft {
+    filter: blur(5px);
+    transform: translateX(-20px);
+    
+  }
+  .fadeInLeft.visible {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+  }
+  /* FadeInLeft Animation */
+  .fadeInRight {
+    filter: blur(5px);
+    transform: translateX(20px);
+    
+  }
+  .fadeInRight.visible {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+  }
+  .fadeInDown {
+    filter: blur(5px);
+    transform: translateY(-100px);
+  }
+  .fadeInDown.visible {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+  }
+  .fadeInUp {
+    filter: blur(5px);
+    transform: translateY(100px);
+  }
+  .fadeInUp.visible {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+  }
+  /* ANIMATION SPEEDS */
+  .fast {
+    animation-delay: 200ms;
+    transition-delay: 200ms;
+  }
+  .regular {
+    animation-delay: 400ms;
+    transition-delay: 400ms;
+  }
+  .slow {
+    animation-delay: 600ms;
+    transition-delay: 600ms;
+  }
+
+
+
+
+
+
 
 
 
@@ -1053,7 +1193,7 @@ textarea {
 footer {
   display: flex;
   flex-direction: column;
-  background-color: #000000;
+  background-color: #2e2e2e;
   height: fit-content;
   color: white;
   padding: 2rem;
