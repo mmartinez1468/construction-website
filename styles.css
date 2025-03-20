@@ -609,6 +609,23 @@
     transition: top .3s;
   }
 }
+/* Mobile dropdown active state */
+@media screen and (max-width: 1118px) {
+  .dropdown__menu--active {
+    max-height: 1000px !important;
+    transition: max-height .4s ease-in !important;
+  }
+  
+  /* Make dropdown toggles more touch-friendly on mobile */
+  .nav__link {
+    cursor: pointer;
+  }
+  
+  /* Ensure dropdown items display properly */
+  .dropdown__item {
+    width: 100%;
+  }
+}
 
 
 

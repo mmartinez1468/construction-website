@@ -1,17 +1,61 @@
-///////////////// OPENS MENU /////////////////
-const showMenu = (toggleId, navId) =>{
+// This function handles the mobile dropdown menu functionality
+document.addEventListener('DOMContentLoaded', function() {
+  // First, keep your existing code for toggling the main menu
+  const showMenu = (toggleId, navId) => {
     const toggle = document.getElementById(toggleId),
           nav = document.getElementById(navId)
   
-    toggle.addEventListener('click', () =>{
-        // Add show-menu class to nav menu
-        nav.classList.toggle('show-menu')
+    toggle.addEventListener('click', () => {
+      // Add show-menu class to nav menu
+      nav.classList.toggle('show-menu')
   
-        // Add show-icon to show and hide the menu icon
-        toggle.classList.toggle('show-icon')
+      // Add show-icon to show and hide the menu icon
+      toggle.classList.toggle('show-icon')
     })
   }
-  showMenu('nav-toggle','nav-menu')
+  showMenu('nav-toggle', 'nav-menu')
+  
+  // Add new code for handling dropdown menus on mobile
+  const dropdownItems = document.querySelectorAll('.dropdown__item');
+  
+  dropdownItems.forEach(item => {
+    // Select the div with nav__link and the dropdown__menu within this item
+    const dropdownToggle = item.querySelector('.nav__link');
+    const dropdownMenu = item.querySelector('.dropdown__menu');
+    
+    // Add click event listener to the dropdown toggle
+    dropdownToggle.addEventListener('click', function(e) {
+      // Check if we're on mobile view
+      if (window.innerWidth <= 1118) {
+        e.preventDefault(); // Prevent default behavior
+        
+        // Toggle an active class on the dropdown menu
+        dropdownMenu.classList.toggle('dropdown__menu--active');
+        
+        // Toggle rotation of the arrow
+        const arrow = dropdownToggle.querySelector('.dropdown__arrow');
+        if (arrow) {
+          arrow.style.transform = dropdownMenu.classList.contains('dropdown__menu--active') 
+            ? 'rotate(180deg)' 
+            : 'rotate(0)';
+        }
+      }
+    });
+  });
+  
+  // Handle window resize to reset dropdown states
+  window.addEventListener('resize', function() {
+    if (window.innerWidth > 1118) {
+      document.querySelectorAll('.dropdown__menu--active').forEach(menu => {
+        menu.classList.remove('dropdown__menu--active');
+      });
+      
+      document.querySelectorAll('.dropdown__arrow').forEach(arrow => {
+        arrow.style.transform = '';
+      });
+    }
+  });
+});
 
 
 
