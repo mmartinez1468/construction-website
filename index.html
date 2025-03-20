@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <!------------------ HEADER SECTION ------------------>
+    <header class="header">
+      <nav class="nav header-container">
+         <div class="nav__data">
+            <a href="index.html" class="nav__logo">
+               <img src="images/LOGO.png" alt="">
+            </a>
+            
+            <div class="nav__toggle" id="nav-toggle">
+               <i class="ri-menu-line nav__burger"></i>
+               <i class="ri-close-line nav__close"></i>
+            </div>
+         </div>
+
+         <!--=============== NAV MENU ===============-->
+         <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+              <li><a href="index.html" class="nav__link">Home</a></li>
+
+              <!--=============== DROPDOWN 1 ===============-->
+               
+               
+              <li><a href="/About/about.html" class="nav__link">About</a></li>
+              <li class="dropdown__item">
+                <div class="nav__link">
+                   Services <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                </div>
+
+                <ul class="dropdown__menu">
+                  <li>
+                    <a href="/webDev/webDev.html" class="dropdown__link">
+                      Concrete
+                    </a>                          
+                  </li> 
+                  <li>
+                      <a href="/hosting.html" class="dropdown__link">
+                         Asphalt
+                      </a>                          
+                   </li>
+
+                   <li>
+                      <a href="/Social Media/media.html" class="dropdown__link">
+                         Crack Sealant
+                      </a>
+                   </li>
+
+                   <li>
+                    <a href="/SEO/seo.html" class="dropdown__link">
+                      Sealcoating
+                    </a>
+                 </li>
+                 <li>
+                  <a href="#" class="dropdown__link">
+                    Lot Marking
+                  </a>
+                 </li>
+                 <li>
+                  <a href="#" class="dropdown__link">
+                    Signs
+                  </a>
+                 </li>
+                 <li>
+                  <a href="#" class="dropdown__link">
+                    Wheel Stops
+                  </a>
+                 </li>
+                 <li>
+                  <a href="#" class="dropdown__link">
+                    Speed Bumps
+                  </a>
+                 </li>
+                </ul>
+             </li>
+              <!--=============== DROPDOWN 2 ===============-->
+              <li><a href="mailto:marcosmartinez16@hickoryhillswebdevelopment.com" class="nav__link">Contact Us</a></li>
+               
+            </ul>
+         </div>
+      </nav>
+    </header>
+    <!-------------------------- LANDING SECTION -------------------------->
+    <section id="landing">
+        <div class="landing-content">
+          <span>Professional Paving And Maintenance</span>
+          <h2>Building Strong Foundations For Your Future</h2>
+          <p>
+            Our dedicated team combines comprehensive construction knowledge with 
+            focused paving craftsmanship to deliver exceptional results for every 
+            project. When you need construction done right from the ground up, our 
+            paving specialists ensure your foundation is built to last.
+          </p>
+          <button class="landing-button">Join Us</button>
+        </div>
+        <div class="landing-contact">
+          <div class="landing-contact-intro">
+            <span>Contact Us</span>
+            <h2>Get In Touch</h2>
+          </div>
+          <div class="formWrapper">
+            <form action="https://api.web3forms.com/submit" method="post">
+              <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                <div class="inputGroup" id="inputName">
+                    <label>Name:</label>
+                    <input type="text"required>
+                </div>
+                <div class="inputGroup">
+                    <label>Email:</label>
+                    <input type="email" required>
+                </div>
+                <div class="inputGroup">
+                    <label>Phone: (Optional)</label>
+                    <input type="text">
+                </div>
+                <div class="inputGroup">
+                    <label>Message:</label>
+                    <textarea rows="5"></textarea required>
+                    <button type="submit" class="landing-button">Submit</button>
+                </div>
+            </form>
+        </div>
+        </div>
+    </section>
+    <!-------------------------- SERVICES SECTION -------------------------->
+    <section id="services">
+      <div class="services-intro">
+        <div class="services-line"></div>
+        <span>Services</span>
+        <h2>What We Offer</h2>
+        <p>
+          From installation to maintenance, our full-service approach ensures 
+          your pavement investments remain functional, safe, and visually 
+          appealing for years to come. We've perfected each specialized service 
+          to deliver exceptional results for residential, commercial, and industrial
+          clients throughout the region.
+        </p>
+      </div>
+      <div class="services-wrapper">
+        <a href="">
+          <div class="services-container">
+            <h3>Asphalte</h3>
+          </div>
+        </a>
+        <a href="">
+          <div class="services-container">
+            <h3>Concrete</h3>
+          </div>
+        </a>
+        <a href="">
+          <div class="services-container">
+            <h3>Crack Sealent</h3>
+          </div>
+        </a>
+        <a href="">
+          <div class="services-container">
+            <h3>Sealcoating</h3>
+          </div>
+        </a>
+        <a href="">
+          <div class="services-container">
+            <h3>Lot Marking</h3>
+          </div>
+        </a>
+        <a href="">
+          <div class="services-container">
+            <h3>Signs</h3>
+          </div>
+        </a>
+        <a href="">
+          <div class="services-container">
+            <h3>Wheel Stops</h3>
+          </div>
+        </a>
+        <a href="">
+          <div class="services-container">
+            <h3>Speed Bumps</h3>
+          </div>
+        </a>
+      </div>
+    </section>
+    <!------------------ SCROLL SECTION ------------------>
+    <section id="scroll">
+      <div class="scrollHeaderWrapper">
+          <div class="scrollHeader">
+              <span>100% Satisfaction Guaranteed</span>
+              <h2>Building Your Vision</h2>
+              <p>
+                Every great structure begins with a plan. At 
+                Quailty Paving & Maintenance, we've mastered the art and 
+                science of bringing architectural dreams to 
+                life through our streamlined construction process.
+              </p>
+          </div>
+          <img src="images/concrete-about.jpg" alt="" class="concrete-img">
+      </div>
+
+      <div class="scrollWrapper">
+          <div class="scrollStepHeader">
+              <h3>Why Our Process Works</h3>
+              <p>
+                Our structured approach eliminates surprises, maintains quality, 
+                and keeps projects on schedule and within budget. By knowing exactly 
+                what to expect at each stage, you can enjoy the building process with 
+                confidence.
+              </p>
+              <img src="images/asphalt-about.jpg" alt="" class="asphalt-img">
+          </div>
+          <div class="scrollStepListWrapper">
+              <div class="scrollStepList">
+                  <h4>Discovery Meeting</h4>
+                  <p>
+                    We start by listening. During our first meeting, we'll discuss 
+                    your vision, requirements, budget, and timeline. This helps us 
+                    understand exactly what you need before any work begins.  
+                  </p>
+              </div>
+              <div class="scrollStepList">
+                  <h4>Proposal & Contract</h4>
+                  <p>
+                    Based on our discovery meeting, we'll prepare a 
+                    detailed proposal outlining scope, materials, costs, 
+                    and timeline. Once approved, we'll formalize everything 
+                    in a clear contract that protects both of us.
+                  </p>
+              </div>
+              <div class="scrollStepList">
+                  <h4>Design & Planning</h4>
+                  <p>
+                    Our team will develop comprehensive plans and secure all 
+                    necessary permits. We handle the paperwork so you don't 
+                    have to worry about regulatory hurdles or compliance issues.
+                  </p>
+              </div>
+              <div class="scrollStepList">
+                  <h4>Pre-Construction</h4>
+                  <p>
+                    Before breaking ground, we'll meet to review plans, introduce 
+                    key team members, establish communication protocols, and answer 
+                    any questions you might have.
+                  </p>
+              </div>
+              <div class="scrollStepList">
+                  <h4> Site Preparation</h4>
+                  <p>
+                    We'll prepare your site by clearing the area, establishing utilities, 
+                    and ensuring proper drainage. This crucial foundation work prevents 
+                    issues later in the project.
+                  </p>
+              </div>
+              <div class="scrollStepList">
+                <h4>Construction Phase</h4>
+                <p>
+                  This is where your project takes shape. Our crews work efficiently while 
+                  maintaining strict quality standards. You'll receive regular updates, and 
+                  our project manager will be your main point of contact throughout.
+                </p>
+              </div>
+              <div class="scrollStepList">
+                <h4>Quality Inspections</h4>
+                <p>
+                  We conduct thorough inspections at key milestones—not just at completion. 
+                  This ensures everything meets our high standards and prevents costly fixes 
+                  later.
+                </p>
+              </div>
+              <div class="scrollStepList">
+                <h4>Project Completion</h4>
+                <p>
+                  As we near completion, we'll conduct a detailed walkthrough with you to identify 
+                  any final adjustments. We don't consider the job done until you're completely 
+                  satisfied.
+                </p>
+            </div>
+            <div class="scrollStepList">
+              <h4>Final Handover</h4>
+              <p>
+                We'll provide you with all relevant documentation, warranties, and maintenance 
+                information, ensuring you have everything needed to enjoy your new space for 
+                years to come.
+              </p>
+          </div>
+          <div class="scrollStepList">
+            <h4>Follow-Up Support</h4>
+            <p>
+              Our relationship doesn't end at project completion. We'll check in with you to 
+              ensure everything is functioning perfectly and address any questions that may 
+              arise.
+            </p>
+        </div>
+            
+          </div>
+      </div>
+    </section>
+    <!------------------ CONTACT SECTION ------------------>     
+    <section id="contact">       
+  <div class="contact-intro">         
+    <span>Contact Us</span>         
+    <h2>Get A Free Consultation</h2>         
+    <p>Ready to transform your vision into reality? Our team of experienced construction professionals is here to help. Whether you're planning a new build, renovation, or expansion project, we offer personalized consultations to understand your needs and provide expert guidance. Fill out the form below, and one of our specialists will contact you within 24 hours to discuss your project and provide a detailed estimate—no obligation, completely free.</p>
+    <img src="images/concrete-contact.jpeg" alt="">       
+  </div>       
+  <div class="contact-us-wrapper">
+    <form class="contact-form">
+      <div class="contact-form-intro">
+        <h3>Contact Us!</h3>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="firstName">First Name:</label>
+          <input type="text" id="firstName" name="firstName" required>
+        </div>
+        <div class="form-group">
+          <label for="lastName">Last Name:</label>
+          <input type="text" id="lastName" name="lastName" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="landing-button">Submit</button>
+    </form>
+  </div>     
+    </section>
+    <!------------------ FOOTER SECTION ------------------>
+    <footer>
+      <div class="footerLinks">
+          <h4>Services</h4>
+          <hr class="solid">
+          <a href="/about.html">
+              <p>Concrete</p>
+          </a>
+          <a href="/index.html">
+              <p>Asphalt</p>
+          </a>
+          <a href="/webDev/webDev.html">
+              <p>Crack Sealant</p>
+          </a>
+          <a href="/index.html">
+              <p>Sealcoating</p>
+          </a>
+          <a href="/index.html">
+            <p>Lot Marking</p>
+          </a>
+          <a href="/index.html">
+            <p>Signs</p>
+          </a>
+          <a href="/index.html">
+            <p>Wheel Stops</p>
+          </a>
+          <a href="/index.html">
+            <p>Speed Bumps</p>
+          </a>
+      </div>
+      <div class="footerLinks">
+          <h4>Resources</h4>
+          <hr class="solid">
+          <a href="mailto:marcosmartinez16@hickoryhillswebdevelopment.com">
+              <p>Support</p>
+          </a>
+          <a href="mailto:marcosmartinez16@hickoryhillswebdevelopment.com">
+              <p>Free Consultation</p>
+          </a>
+          <a href="/index.html">
+              <p>FAQ</p>
+          </a>
+          <a href="">
+              <p>Call Us</p>
+          </a>
+      </div>
+      <div class="footerLinks">
+          <h4>About</h4>
+          <hr class="solid">
+          <a href="">
+              <p>Portfolio</p>
+          </a>
+          <a href="">
+              <p>Terms Of Service</p>
+          </a>
+          <a href="/index.html">
+              <p>Services</p>
+          </a>
+          <a href="">
+              <p>Refund Policy</p>
+          </a>
+      </div>
+      <div class="footerLinks footerPrivacy">
+          <h4>Privacy</h4>
+          <hr class="solid">
+          <p>
+            Questions or concerns? Reading this Privacy 
+            Notice will help you understand your privacy 
+            rights and choices. We are responsible for 
+            making decisions about how your personal 
+            information is processed. If you do not 
+            agree with our policies and practices, 
+            please do not use our Services. 
+            If you still have any questions or 
+            concerns, please contact us at 
+            marcosmartinez16@icloud.com.
+          </p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
