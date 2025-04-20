@@ -637,6 +637,7 @@
 #landing {
   height: 100vh;
   background-color: black;
+  position: relative;
 }
 
 #landing::before {
@@ -646,10 +647,10 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(images/landing-gif.gif);
-  background-attachment: fixed;
+  background-image: url(images/asphalt-about.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center; /* Helps with mobile positioning */
   opacity: 0.2; /* Controls background transparency */
   z-index: 1;
 }
@@ -673,6 +674,8 @@
 .landing-content > p {
   color: white;
   padding-bottom: 1rem;
+  max-width: 90%; /* Limit width on mobile for readability */
+  margin: 0 auto;
 }
 .landing-button {
   width: 9em;
@@ -741,11 +744,19 @@ form {
   #landing {
     display: flex;
   }
+  #landing::before {
+    background-image: url(images/landing-gif.gif);
+    background-attachment: fixed; /* Only apply fixed background on desktop */
+  }
   .landing-content {
     align-items: start;
     text-align: start;
     padding-left: 2rem;
     width: 50%;
+  }
+  .landing-content > p {
+    max-width: 90%;
+    margin: 0;
   }
   .landing-contact {
     display: flex;
@@ -766,11 +777,6 @@ form {
   }
   .landing-contact-intro > h2 {
     color: #ffffff;
-  }
-}
-@media screen and (max-width: 768px) {
-  #landing::before {
-    background-image: url(images/asphalt-about.jpg);
   }
 }
 
