@@ -1084,7 +1084,7 @@ height: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #555;
+  background-color: #ffffff;
   border-radius: 10px;
   max-width: 800px;
   padding: 2rem;
@@ -1096,7 +1096,6 @@ height: 0;
 }
 .contact-form-intro {
   padding-bottom: 1rem;
-  color: white;
 }
 .form-row {
   display: flex;
@@ -1117,14 +1116,12 @@ label {
   display: block;
   margin-bottom: 0.5rem;
   font-weight: 500;
-  color: #ffffff;
 }
 
 input, textarea {
   width: 100%;
-  padding: 0.75rem 1rem;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+  border: none;
+  border-bottom: 1px solid black;
   font-size: 1rem;
   transition: border-color 0.3s;
 }
